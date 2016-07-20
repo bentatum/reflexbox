@@ -16,6 +16,7 @@ const Flex = ({
   auto,
   ...props
 }, { reflexbox }) => {
+
   let display = 'flex'
   const { breakpoints } = { ...config, ...reflexbox }
 
@@ -31,11 +32,6 @@ const Flex = ({
       }
     })
   }
-
-  Object.keys(breakpoints)
-    .forEach(key => {
-      delete props[key]
-    })
 
   const sx = assign(
     display ? { display } : null,
@@ -67,7 +63,7 @@ Flex.propTypes = {
     'center',
     'baseline',
     'flex-start',
-    'flex-end'
+    'flex-end',
   ]),
   /** Sets justify-content */
   justify: React.PropTypes.oneOf([
@@ -75,15 +71,14 @@ Flex.propTypes = {
     'space-around',
     'space-between',
     'flex-start',
-    'flex-end'
+    'flex-end',
   ]),
   /** Sets flex: 1 1 auto */
   auto: React.PropTypes.bool,
   /** Passes in a custom element or component */
   is: React.PropTypes.oneOfType([
-    React.PropTypes.string,
-    React.PropTypes.object,
-    React.PropTypes.func
+    React.PropTypes.element,
+    React.PropTypes.node
   ])
 }
 
