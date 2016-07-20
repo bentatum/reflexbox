@@ -52,6 +52,7 @@
     "webpack-dev-server": "^1.12.0"
   },
   "dependencies": {
+    "inline-style-prefixer": "^2.0.1",
     "object-assign": "^4.0.1"
   },
   "directories": {
