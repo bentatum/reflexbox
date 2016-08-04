@@ -1,6 +1,6 @@
 {
-  "name": "reflexbox",
-  "version": "1.1.4",
+  "name": "prefixed-reflexbox",
+  "version": "1.1.7",
   "description": "React flexbox layout and grid system",
   "main": "dist/index.js",
   "scripts": {
@@ -61,7 +61,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jxnblk/reflexbox.git"
+    "url": "git+https://github.com/bentatum/reflexbox.git"
   },
   "keywords": [
     "react",
@@ -70,7 +70,7 @@
     "grid"
   ],
   "bugs": {
-    "url": "https://github.com/jxnblk/reflexbox/issues"
+    "url": "https://github.com/bentatum/reflexbox/issues"
   },
   "babel": {
     "presets": [
